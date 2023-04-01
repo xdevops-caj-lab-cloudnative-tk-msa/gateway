@@ -1,0 +1,13 @@
+server:
+  port: 4000
+
+zuul:
+  routes:
+    auth-service:
+        url: http://localhost:5000
+    account-service:
+        url: http://localhost:6000
+    statistics-service:
+        url: http://localhost:7000
+    notification-service:
+        url: http://localhost:8000
