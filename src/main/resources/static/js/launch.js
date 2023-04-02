@@ -80,10 +80,14 @@ $(window).load(function(){
         global.mobileClient = true;
 	}
 
-    $.getJSON("https://api.exchangeratesapi.io/latest?base=RUB&symbols=EUR,USD", function( data ) {
-        global.eur = 1 / data.rates.EUR;
-        global.usd = 1 / data.rates.USD;
-    });
+	// TODO hardcoded exchange rates
+    // $.getJSON("https://api.exchangeratesapi.io/latest?base=RUB&symbols=EUR,USD", function( data ) {
+    //     global.eur = 1 / data.rates.EUR;
+    //     global.usd = 1 / data.rates.USD;
+    // });
+
+	global.eur = 1 / 0.011866105;
+	global.usd = 1 / 0.012899035;
 
 	var account = getCurrentAccount();
 

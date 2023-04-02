@@ -281,7 +281,18 @@ TODO 使用Helm部署bitnami/mongodb
 TODO Kubernetes deployment, confimap, secret, service
 
 
+## Troubleshooting
 
+### launch.js无法访问api.exchangeratesapi.io
+
+修改launch.js直接harcode汇率数据。
+
+```js
+	global.eur = 1 / 0.011866105;
+	global.usd = 1 / 0.012899035;
+```
+
+TODO 只有在Safari浏览器上输入用户名并按回车后，才能正常显示输入密码的框。
 
 
 
