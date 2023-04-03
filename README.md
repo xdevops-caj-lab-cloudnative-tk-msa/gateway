@@ -253,6 +253,11 @@ CMD java -jar /opt/app.jar
 EXPOSE 8080
 ```
 
+先构建应用：
+```bash
+mvn clean install
+```
+
 构建容器镜像：
 
 ```bash
@@ -272,13 +277,6 @@ podman push quay.io/xxx/gateway:latest
 
 在piggymeticrs-config仓库中集中管理多个微服务的Kubernetes YAML。
 
-### 部署MongoDB
-
-TODO 使用Helm部署bitnami/mongodb
-
-### 部署应用
-
-TODO Kubernetes deployment, confimap, secret, service
 
 
 ## Troubleshooting
